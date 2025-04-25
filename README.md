@@ -19,6 +19,7 @@ It constructs an Abstract Syntax Tree (AST) and applies semantic checks to enfor
    ./Compile.sh
    ```
 ## Project Structure
+```
 MiniJava-Compiler/
 ├── javacc-6.0/          # JavaCC parser generator toolchain
 ├── bin/                 # Compiled parser/runtime artifacts
@@ -27,17 +28,18 @@ MiniJava-Compiler/
 ├── tests/               # Sample MiniJava programs
 ├── Compile.sh           # Build and run script
 └── Typecheck.java       # Main driver for parsing and type checking
-Features
-Grammar Parsing via JavaCC
+```
+## Features
+- **Grammar Parsing via JavaCC**
 
-AST Construction for MiniJava programs
+- **AST Construction for MiniJava programs**
 
-Visitor Pattern to cleanly separate the AST data from semantic-check algorithms
+- **Visitor Pattern to cleanly separate the AST data from semantic-check algorithms**
 
-Type Checking with detailed error reporting (type mismatches, undeclared identifiers, etc.)
+- **Type Checking with detailed error reporting (type mismatches, undeclared identifiers, etc.)**
 
-Symbol Table for scope and declaration tracking
+- **Symbol Table for scope and declaration tracking**
 
-Extensible Architecture so you can add new analyses by writing additional visitor classes
+- **Extensible Architecture so you can add new analyses by writing additional visitor classes**
 
 
